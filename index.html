@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BOOK_GARDEN</title>
+  <style>
+
+    body {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      display: flex;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .image-section {
+      flex: 1;
+      background: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 40px 30px;
+    }
+
+    .form-section h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-section input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .form-section .butt {
+      width: 100%;
+      padding: 12px;
+      background-color: #9de569;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+     
+    }
+
+    .form-section .butt:hover {
+      background-color: #339e38;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img src="./img/Learning.gif" alt="Signup Image" />
+    </div>
+    <div class="form-section">
+      <h2>📚 BOOK_GARDEN 📚</h2>
+      <h3>Create Account</h3>
+      <form onsubmit="return submitSignup()">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+        <button type="submit" class="butt">Signup</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function submitSignup() {
+      
+      window.location.href = "code/home.html";
+      return false; 
+    }
+  </script>
+</body>
+</html>
