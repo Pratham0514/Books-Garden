@@ -1,0 +1,68 @@
+ .futtor {
+  background-color: #1976d2;
+  color: white;
+  padding: 15px 0;
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.futtor-headline {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.futtor-links {
+  list-style: none;        /* removes dots */
+  display: flex;
+  flex-direction: column;  /* shows items in a column */
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.futtor-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.futtor-links li a:hover {
+  color: #f39c12;
+}
+.futtor {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 0;
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.futtor-headline {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.futtor-links {
+  list-style: none;        
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.futtor-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.futtor-links li a:hover {
+  color: #f39c12;
+}
