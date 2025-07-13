@@ -4,47 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
- *{
-    margin: 0;
- }
-.navbar {
-  background-color: #2c3e50;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-links li a:hover {
-  color: #f39c12;
-}
-
-
-    </style>
+    <link rel="stylesheet" href="./../css/home.css">
 </head>
 <body>
   <div>
    <nav class="navbar">
-    <div class="logo">📚 Book Library</div>
+    <div class="logo">📚 BOOKS_GARDEN 📚</div>
     <ul class="nav-links">
       <li><a href="./home.html">Home</a></li>
       <li><a href="./Books.html">Catalog</a></li>
@@ -53,12 +18,76 @@
     </ul>
   </nav>
   </div>
-   <h1 id="welcomeText">Welcome</h1>
+  
+  <div class="welcome">
+    <i class="fa-solid fa-hands-praying fa-2xl welcome" style="padding-right: 1.5%;"></i>
+    <h1 id="welcomeText"> </h1>
+    <i class="fa-solid fa-hands-praying fa-2xl welcome" style="padding-left: 1.5%;"></i>
+  </div>
+
+  <div class="container">
+
+    <div class="qq">
+      <i id="welcome-msg" class="welcome-msg"></i> 
+      <i class="text1">
+        Where every page is a new Adventure
+      </i>
+      <i>
+      From classics to contemporary, our bookstore offers a wide selection of books to suit every taste and interest.
+      Start exploring our shelves today and uncover your next literary gem.
+      </i>
+    </div>
+    
+    <div class="ig">
+      <button onclick="back()"><</button>
+      <img src="./../img/img4.jpg" id="img">
+      <button onclick="next()">></button>
+    </div>
+
+  </div>
+
+</div>
+
+
 
   <script>
     const params = new URLSearchParams(window.location.search);
     const name = params.get("name");
     document.getElementById("welcomeText").innerText = "Welcome " + name;
+   document.getElementById("welcome-msg").innerHTML = "Start Your reading journey today&nbsp" + name;
+
   </script>
+<script>
+        const imgarray=[
+            "./../img/img1 (1).jpg",
+            "./../img/img2.jpg",
+            "./../img/img3.jpg",
+            "./../img/img4.jpg"
+        ];
+        let imgindex= 0;
+
+        const imgmove =document.getElementById("img");
+
+        function back(){
+            if(imgindex == 0){
+                imgindex=imgarray.length -1;
+            }
+            else{
+                imgindex--;
+            }
+            imgmove.src=imgarray[imgindex];
+        }
+
+        function next(){
+            if(imgindex==imgarray.length -1){
+                imgindex=0;
+            }
+            else{
+                imgindex++;
+            }
+            imgmove.src=imgarray[imgindex];
+        }
+    </script>
+  <script src="https://kit.fontawesome.com/29829fba35.js" crossorigin="anonymous"></script>
 </body>
 </html>

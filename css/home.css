@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+ }
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #f39c12;
+}
+      .welcome{
+        color:  #2c3e50;
+        text-align: center;
+        justify-content: center;
+        padding:20px 0;
+        display: flex;
+        background: #ffffff;
+      }
+      
+      .container {
+      
+      background: #fffefd;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      display: flex;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+      .qq{
+        padding: 10% 2.5% 10% 6%;
+      }
+      .ig{
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+        margin: 1% 2.9% 1% 2%;
+      
+        border-radius: 10%;
+      }
+      .welcome-msg{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: block;
+        font-size: 25px;   
+        padding-bottom: 45px;
+       
+      }
+      .text1{
+        font-family:Arial Black;
+        display: block;
+        font-size: 30px; 
+        padding-bottom: 25px;
+       
+      }
+      div img{
+        width: 600px;
+        border-radius: 9%;
+      }
+      div button{
+        padding: 12px;
+        margin: 5px;
+        border-radius: 35%;
+        background: #e0ebdd;
+      }
+      div button:hover{
+        box-shadow: 0 0 5px 5px rgb(174, 173, 172);
+      }
