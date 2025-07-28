@@ -1,5 +1,9 @@
 *{
     margin: 0;
+    
+ }
+ .body{
+  background: #F5F0E9;
  }
 
       .welcome{
@@ -8,12 +12,12 @@
         justify-content: center;
         padding:20px 0;
         display: flex;
-        background: #ffffff;
+        background: #F5F0E9;
       }
       
       .container {
       
-      background: #fffefd;
+      background: #F5F0E9;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       display: flex;
       border-radius: 10px;
@@ -29,6 +33,10 @@
         margin: 1% 2.9% 1% 2%;
       
         border-radius: 10%;
+      }
+      .butt{
+        background-color:  #dfdad6;
+            border:none;
       }
       .welcome-msg{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -52,7 +60,7 @@
         padding: 12px;
         margin: 5px;
         border-radius: 35%;
-        background: #e0ebdd;
+        background: #F5F0E9;
       }
       div button:hover{
         box-shadow: 0 0 5px 5px rgb(174, 173, 172);
