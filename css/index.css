@@ -1,72 +1,79 @@
-body {
-      background-color: #F5F0E9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      width: 80%;
-      max-width: 800px;
-      background: #112250;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-      display: flex;
-      border-radius: 10px;
+ body {
+      margin: 0;
+      background: #f5e3bf;
       overflow: hidden;
+      cursor: none;
+      font-family: Arial, sans-serif;
     }
-
-    .image-section {
-      flex: 1;
+.trail {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #10d7d1;
+  box-shadow: 0 0 8px #222a44, 0 0 16px #000, 0 0 32px #112250;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+    .container {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
       background: #112250;
+      padding: 32px 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 24px #00ffff;
+      z-index: 10;
       display: flex;
-      justify-content: center;
+      flex-direction: row;
       align-items: center;
-      padding: 20px;
+      gap: 32px;
+      margin-top:60px;
     }
-
     .image-section img {
-      max-width: 100%;
-      height: auto;
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px #00ffff;
     }
-
-    .form-section {
-      flex: 1;
-      padding: 40px 30px;
-    }
-
     .form-section h2 {
-      margin-bottom: 20px;
+      margin: 0 0 8px 0;
       color: #E0C58F;
       text-align: center;
     }
     .form-section h3 {
-      margin-bottom: 20px;
+      margin: 0 0 16px 0;
       text-align: center;
+      color: #E0C58F;
     }
-
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
     .form-section input {
-      width: 92%;
-      padding: 12px;
-      margin-bottom: 15px;
-      background: #f8f2e7;
-      border-radius: 5px;
-      border: none;
-      
-    }
-
-    .form-section .butt {
-      width: 100%;
       padding: 10px;
-      background-color: #83cc4f;
-      color: white;
+      border-radius: 8px;
       border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-     
+      font-size: 1rem;
+      margin-bottom: 8px;
+      background: #F5F0E9;
+      color: #0a0a0a;
+      box-shadow: 0 0 8px #00ffff44;
     }
-
-    .form-section .butt:hover {
-      background-color: #339e38;
+    .form-section button.butt {
+      background: #00ffff;
+      color: #222;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 8px #00ffff;
+      border: none;
+      font-size: 1rem;
+      margin-top: 8px;
+    }
+    .form-section button.butt:hover {
+      background: #E0C58F;
+      color: #112250;
     }
