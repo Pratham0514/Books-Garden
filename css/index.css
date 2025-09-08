@@ -1,6 +1,6 @@
  body {
       margin: 0;
-      background: #f5e3bf;
+      background: #141f3d;
       overflow: hidden;
       cursor: none;
       font-family: Arial, sans-serif;
@@ -10,8 +10,8 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #10d7d1;
-  box-shadow: 0 0 8px #222a44, 0 0 16px #000, 0 0 32px #112250;
+  background: #E0C58F;
+  box-shadow: 0 0 8px #4edb6f, 0 0 16px #0b82b1, 0 0 32px #112250;
   pointer-events: none;
   mix-blend-mode: screen;
 }
@@ -20,7 +20,7 @@
       top: 60px;
       left: 50%;
       transform: translateX(-50%);
-      background: #112250;
+
       padding: 32px 40px;
       border-radius: 16px;
       box-shadow: 0 0 24px #00ffff;
